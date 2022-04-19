@@ -7,7 +7,7 @@ echo 'Hi, this is bahaa'
 echo 'we are starting the test'
 }
 }
-stage ('Build')
+    stage ('Build') {
 steps {
 echo 'Building Sample Maven Project'
 }
