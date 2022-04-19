@@ -7,10 +7,10 @@ git("https://github.com/bahaaahmed2/maven_java_project.git","master")
 triggers{
 scm('* * * * *')
 }
-steps{
+steps {
 maven('clean package','pom.xml')
 }
-publishers
+  publishers {
 //archive the war file generated
 archiveArtifacts '**/*.jar'
 }
